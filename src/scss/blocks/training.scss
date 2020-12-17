@@ -45,7 +45,9 @@
     }
 
     &_left {
-      background-image: url($img + "/training.png");
+      background-image:
+        url($img + "/training2.png"),
+        linear-gradient(90deg, #101010 17.86%, rgba(16, 16, 16, 0) 93.4%);
       background-position: right bottom;
       background-size: contain;
       background-repeat: no-repeat;
@@ -149,6 +151,7 @@
     line-height: $line-height-44;
     margin: 0;
     margin-bottom: 20px;
+    color: $color-black;
 
     @media (min-width: $tablet) {
       margin-bottom: 15px;
