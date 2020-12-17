@@ -1,7 +1,7 @@
 .menu {
-  @import '../main/variables';
-  @import '../main/variables.fonts';
-  @import '../main/variables.colors';
+  @import "../main/variables";
+  @import "../main/variables.fonts";
+  @import "../main/variables.colors";
 
   font-size: 0;
   line-height: 0;
@@ -212,20 +212,8 @@
     list-style: none;
 
     &:hover {
-      .menu__level2 {
-        display: block;
-        list-style: none;
-        list-style-image: none;
-        list-style-type: none;
-        overflow: hidden;
-      }
-
       .menu__link {
         color: $color-menu-link-active;
-      }
-
-      .menu__arrow {
-        transform: translateY(-50%) scale(1, -1);
       }
     }
 
@@ -263,13 +251,13 @@
           color: $color-menu-link-active;
         }
 
-        .menu__arrow {
-          transform: translateY(-50%) scale(1, -1);
-        }
+        // .menu__arrow {
+        //   transform: translateY(-50%) scale(1, -1);
+        // }
 
-        .menu__level2 {
-          display: block;
-        }
+        // .menu__level2 {
+        //   display: block;
+        // }
       }
     }
   }
