@@ -1,0 +1,118 @@
+.help {
+  @import '../main/variables';
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
+  background-color: $color-gray;
+
+  &__wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: $mobile;
+    padding: 60px 20px;
+    @media (min-width: $tablet) {
+      padding: 34px 40px 45px;
+      max-width: $tablet;
+    }
+    @media (min-width: $desktop) {
+      padding: 40px 80px 50px;
+      max-width: $desktop;
+    }
+    @media (min-width: $desktop-l) {
+      padding: 54px 120px 77px;
+      max-width: $desktop-l;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @media (min-width: $tablet) {
+      max-width: 388px;
+    }
+    @media (min-width: $desktop) {
+      max-width: 425px;
+    }
+    @media (min-width: $desktop-l) {
+      max-width: 590px;
+    }
+
+    &_right {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+      @media (min-width: $tablet) {
+        max-width: 224px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $desktop) {
+        max-width: 280px;
+      }
+      @media (min-width: $desktop-l) {
+        max-width: 370px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'Mail_Sans_Roman', sans-serif;
+    font-weight: 500;
+    font-size: $font-size-24;
+    line-height: $line-height-30;
+    margin-bottom: 20px;
+    @media (min-width: $desktop-l) {
+      font-size: $font-size-36;
+      line-height: $line-height-44;
+    }
+  }
+
+  &__tag {
+    font-weight: 500;
+    border-radius: 28px;
+    font-family: 'Mail_Sans_Roman', sans-serif;
+    padding: 17px 24px;
+    margin: 0 13px 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    font-size: $font-size-15;
+    line-height: $line-height-20;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-10;
+      line-height: $line-height-12;
+      padding: 13px 22px;
+      margin: 0 17px 18px 0;
+    }
+    @media (min-width: $desktop) {
+      font-size: $font-size-12;
+      line-height: $line-height-25;
+      padding: 11px 30px;
+      margin: 0 17px 18px 0;
+    }
+    @media (min-width: $desktop-l) {
+      font-size: $font-size-16;
+      line-height: $line-height-20;
+      padding: 15px 40px;
+      margin: 0 22px 23px 0;
+    }
+  }
+}
